@@ -1,0 +1,27 @@
+[
+    {
+        "image":"/awards/award1.svg",
+        "title":"Naxly as the Winners in Global Agency Awards",
+        "info":"Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups."
+    },
+    {
+        "image":"/awards/award2.svg",
+        "title":"Expert Prespective Agency Awards",
+        "info":"Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups."
+    },
+    {
+        "image":"/awards/award3.svg",
+        "title":"Business Prespective Global Agency Awards",
+        "info":"Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups."
+    },
+    {
+        "image":"/awards/award4.svg",
+        "title":"Value for Results in Global Agency Awards",
+        "info":"Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups."
+    },
+    {
+        "image":"/awards/award5.svg",
+        "title":"Global Experience in Agency Awards",
+        "info":"Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups."
+    }
+]
