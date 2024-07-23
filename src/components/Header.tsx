@@ -3,7 +3,7 @@ import Button from './Button'
 // iconlar
 import { FaBars } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
-
+import { Link } from 'react-router-dom';
 const Header :React.FC= () => {
   const nemo=useRef<HTMLDivElement>(null);
 
@@ -23,11 +23,11 @@ const Header :React.FC= () => {
       <div className="mobile-menu" ref={nemo}>
       <IoCloseSharp onClick={closenavbar} className='text-white closebtn'/>
       <nav className='mobile-links'>
-        <a className='my-1'href="#">Home</a>
-        <a className='my-1' href="#">About</a>
-        <a className='my-1' href="#">Services</a>
-        <a className='my-1' href="#">Blog</a>
-        <a className='mb-4' href="#">Contact</a>
+        <Link className='my-1' to="/">Home</Link>
+        <Link className='my-1' to="/about">About</Link>
+        <Link className='my-1' to="/services">Services</Link>
+        <Link className='my-1' to="/blog">Blog</Link>
+        <Link className='mb-4' to="/contact">Contact</Link>
         <Button klass="mob-sign-in" btnText="Sign in" image=""/>
         </nav>
         
@@ -37,7 +37,7 @@ const Header :React.FC= () => {
 
     {/* logo img*/}
 
-    <a className="navbar-brand" href="#"><img src="/Header/logo.svg" alt=""className='header-logo'/></a>
+    <Link className="navbar-brand" to="/"><img src="/Header/logo.svg" alt=""className='header-logo'/></Link>
 
     {/* open navbar icon */}
 
@@ -49,19 +49,19 @@ const Header :React.FC= () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mx-auto mb-2 mb-lg-0 ">
         <li className="nav-item">
-          <a className="nav-link text-light mx-2" href="#">Home</a>
+          <Link className="nav-link text-light mx-2" to="/">Home</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-light mx-2" href="#">About</a>
+          <Link className="nav-link text-light mx-2" to="/about">About</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-light mx-2" href="#">Services</a>
+          <Link className="nav-link text-light mx-2" to="/services">Services</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-light mx-2" href="#">Blog</a>
+          <Link className="nav-link text-light mx-2" to="/blog">Blog</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-light mx-2" href="#">Contact</a>
+          <Link className="nav-link text-light mx-2" to="/contact">Contact</Link>
         </li>
           </ul>
 
