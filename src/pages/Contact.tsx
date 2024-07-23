@@ -13,6 +13,16 @@ const Contact: React.FC = () => {
         e.preventDefault();
     
         if(myform.current){
+            const formData = new FormData(myform.current);
+            
+            const name = formData.get('name')?.toString().trim();
+            const email = formData.get('email')?.toString().trim();
+            const message = formData.get('message')?.toString().trim();
+
+            if (!name || !email || !message) {
+                toast.error("Please fill in all fields before submitting.");
+                return;
+            }
             emailjs
           .sendForm('service_j4igqsg', 'template_u3l7wk8', myform.current, {
             publicKey: '3g4_Ne5jaFsCVO_Yg',
